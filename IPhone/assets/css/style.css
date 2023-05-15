@@ -1,0 +1,449 @@
+@import "/assets/css/reset.css";
+@import "/assets/css/fonts.css";
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.15;
+}
+
+.header {
+    background-color: #0a0a0a;
+    min-height: 113px;
+    color: #717171;
+}
+
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 0;
+    align-items: center;
+    font-size: 24px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 30px;
+
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.iphone {
+
+    display: flex;
+    padding-top: 71px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px;
+    background-color: #F5F5F7;
+}
+
+.iphone__title {
+    font-size: 64px;
+    font-weight: 700;
+    color: #490E84;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+.iphone__img-item {
+
+    margin-bottom: 25px;
+}
+
+.iphone__link {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #490E84;
+    color: #fff !important;
+    padding: 20px 0;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.what-news__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #717171;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.what-news {
+    margin-bottom: 150px;
+}
+
+.what-news__block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.what-news__text {
+    font-size: 14px;
+}
+
+.what-news__text-item {
+    margin-bottom: 30px;
+}
+
+.what-news__text-item:last-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.what-news__img {
+    background-image: url(../../img/Apple-iPhone-14-Pro-Max\ 1.png);
+    background-repeat: no-repeat;
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.choose-color {
+    margin-bottom: 175px;
+}
+
+.choose-color__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #717171;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.choose-color__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    text-align: center;
+}
+
+.choose-color__img {
+    margin-bottom: 20px;
+}
+
+.choose-color__text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.choose-color__text-trans {
+    font-size: 14px;
+}
+
+.you-wants {
+    max-height: 600px;
+    height: 100%;
+
+}
+
+.you-wants-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #574B63;
+}
+
+.you-wants__form {
+    padding: 140px 90px;
+}
+
+.you-wants__title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 72px;
+    color: #fff;
+}
+
+
+.form_input {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #F5F5F5;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form_input::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+.form__text {
+    color: #fff;
+    opacity: .5;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form__btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #fff;
+    max-width: 240px;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 30px;
+    color: #490E84;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+
+}
+
+.you-wants-img {
+    width: 100%;
+    background-image: url(../../img/hero_endframe__cvklg0xk3w6e_large\ 1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    background-color: #0a0a0a;
+}
+
+.footer__menu {
+    display: flex;
+    padding: 60px 0;
+    color: #717171;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__btn {
+    width: 30px;
+    height: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__btn span {
+    height: 2px;
+    background-color: #fff;
+    width: 100%;
+}
+
+/*ADAPTIVE*/
+@media (max-width:1000px) {
+    .what-news {
+        min-height: 350px;
+        height: 100%;
+        padding: 0 20px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width:820px) {
+    .menu__btn {
+        display: flex;
+    }
+
+    .menu__btn,
+    .logo {
+
+        z-index: 10;
+    }
+
+    .tel {
+        display: none;
+    }
+
+    .menu__list {
+        position: absolute;
+        z-index: 4;
+        background-color: #0a0a0a;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 100px 0;
+        transform: translateY(-100%);
+        transition: transform .4s ease;
+    }
+
+    .menu__list-item:hover {
+        background-color: #fff;
+        color: #0a0a0a;
+        padding: 5px 15px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .menu__list.menu__list--active {
+        transform: translateY(0%);
+        color: #fff;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+    .iphone__title {
+        font-size: 48px;
+    }
+
+    .iphone {
+        margin-bottom: 70px;
+    }
+
+    .iphone__img {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .what-news {
+        min-height: 350px;
+        height: 100%;
+        padding: 0 20px;
+        margin-bottom: 70px;
+    }
+
+    .what-news__text-item:not(:first-child):not(:last-child) {
+        display: none;
+    }
+
+    .what-news__img {
+        background-size: contain;
+    }
+
+    .choose-color {
+        margin-bottom: 70px;
+    }
+
+    .choose-color__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .you-wants-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    .you-wants__form {
+        padding: 70px 45px 50px;
+    }
+
+    .you-wants-img {
+        display: none;
+    }
+
+}
+
+@media(max-width:560px) {
+    .iphone {
+        margin-bottom: 40px;
+    }
+
+    .iphone__title {
+        font-size: 36px;
+    }
+
+    .iphone__img {
+        width: 70%;
+    }
+
+    .iphone__link {
+        font-size: 16px;
+        max-width: 250px;
+        padding: 15px 0;
+    }
+
+    .what-news__title {
+        font-size: 28px;
+    }
+
+    .what-news__text-item:not(:last-child) {
+        display: none;
+    }
+
+    .what-news__text-item:last-child {
+        font-size: 16px;
+        margin-bottom: 0;
+        text-align: justify;
+    }
+
+    .footer__menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width:420px) {
+    .what-news__title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .what-news__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .what-news__text-item:last-child {
+        margin-bottom: 20px;
+    }
+
+    .what-news__img {
+        background-position: center;
+        min-height: 150px;
+        height: 100%;
+    }
+
+    .choose-color__title {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .choose-color__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
